@@ -22,12 +22,21 @@
 <body>
   <main>
     <section class="container">
+<header>
+<a href="/">
+  <h1>{{ site.name }}</h1>
 
-  <h1>{{ title }}</h1>
+</a>
+</header>  
+
+<h3>{{ title }}</h3>
+
 
   {{ content | safe }}
     </section>
     
+   
+
     <footer>
       <hr>
       <div class="footer">
@@ -41,6 +50,8 @@
   </div>
     </footer>  
 
-</main>
+
+  </main>
+
 </body>
 </html>

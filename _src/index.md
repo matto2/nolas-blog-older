@@ -1,10 +1,9 @@
 ---
 layout: base
-title: Nola’s Blog
 ---
 
-testing. TEsting. testing. TEsting. testing. TEsting. testing. TEsting. testing. TEsting. testing.TEstintesting. TEsting. testing. TEsting. testing. TEsting. testing. TEsting. esting. TEsting. testing.TEsting. testing. TEsting. testing. TEsting. 
+### My posts
 
-Boo
-
-### Hey
+{%- for post in collections.general %}
+* [{{ post.data.title }}]({{ post.url }})
+{%- endfor %}
