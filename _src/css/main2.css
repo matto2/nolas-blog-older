@@ -1,0 +1,59 @@
+:root {
+  --main-bg-color: #fcdadf;
+  --accent: deeppink;
+}
+
+body {
+  background: var(--main-bg-color);
+  font-family: sans-serif;
+    /* padding: var(--ok-s-3); */
+    /* max-width: 80ch; */
+    /* margin: auto; */
+    max-width: 100%;
+}
+
+h1 {
+  color: var(--accent);
+}
+
+.container {
+  padding: var(--ok-s-3);
+  max-width: 80ch;
+  margin: auto;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 1rem 0 0 0;
+}
+
+section, footer {
+  /* padding: 10px; */
+  margin: 0;
+}
+
+section {
+  flex: 1;
+  background: var(--main-bg-color);
+}
+
+.container {
+  max-width: 54rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--main-bg-color);
+}
+
+footer {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  width: 100%;
+}  
