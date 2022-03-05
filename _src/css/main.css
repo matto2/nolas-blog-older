@@ -1,9 +1,9 @@
 :root {
   --main-bg-color: #f5f2ec;
   --darker-warm-light-gray: #e9e5dd;
-  --main-font: 'Nunito', sans-serif;
-  --main-font-italic: 'Nunito-Italic', sans-serif;
-  --main-text-color: #444;
+  --main-font: sans-serif;
+  --main-font-italic: sans-serif;
+  --main-text-color: red;
   --link-color: #047a8f;
   --link-color-light: #5b95ad;
   --link-darker: #b33000;
@@ -19,7 +19,6 @@ body {
   background: var(--main-bg-color);
   margin: 0 1rem 0 1rem;
   font-family: sans-serif;
-  color: red;
   }
 
 
