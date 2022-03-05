@@ -1,15 +1,16 @@
 :root {
-  --main-bg-color: #f5f2ec;
+  --main-bg-color: #ffe9ec;
   --darker-warm-light-gray: #e9e5dd;
   --main-font: sans-serif;
   --main-font-italic: sans-serif;
-  --main-text-color: red;
+  --main-text-color: #444;
   --link-color: #047a8f;
   --link-color-light: #5b95ad;
   --link-darker: #b33000;
   --text-ital: 0;
   --orangered: orangered;
   --darkorange: darkorange;
+  --accent: deeppink;
   --light-gray: #aaa;
   --white: #ffffff;
   --h1-big-text: 2.5rem;
@@ -25,9 +26,10 @@ body {
 
 h1 {
   font-size: var(--h1-big-text);
+  color: var(--accent);
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Nunito';
   src: url('/fonts/Nunito-VariableFont_wght.ttf') format("truetype-variations");
   font-weight: 1 999;
@@ -37,7 +39,7 @@ h1 {
   font-family: 'Nunito';
   src: url('/fonts/Nunito-Italic-VariableFont_wght.ttf') format("truetype-variations");
   font-style: oblique 0deg 20deg;
-}  
+}   */
 
 em {
   --text-ital: 1;
@@ -69,7 +71,7 @@ section {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 54rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;

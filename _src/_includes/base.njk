@@ -16,8 +16,27 @@
 
 </head>
 <body>
+  <main>
+    <section class="container">
+
   <h1>{{ title }}</h1>
 
   {{ content | safe }}
+    </section>
+    
+    <footer>
+      <hr>
+      <div class="footer">
+      <p>
+        Made in Santa Cruz, CA  |  &copy
+        <script>
+           document.write(new Date().getFullYear());
+        </script> 
+     Nola O'Leary <!-- | <a href="https://www.buymeacoffee.com/bBrGCiohd">Buy me a coffee</a>  -->
+    </p>
+  </div>
+    </footer>  
+
+</main>
 </body>
 </html>
