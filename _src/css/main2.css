@@ -1,27 +1,54 @@
 :root {
-  --main-bg-color: #daecfc;
-  --accent: deeppink;
+  --main-bg-color: #d8ecfdc2;
+  --accent: #055bfc;
+  --header-font: 'Crete Round', cursive;
+  --light-text: #d4e0ff;
+  --dark-text: #444;
+  --link-color: #055bfc;
+  --serif: 'EB Garamond', serif;
+  --body-bigger: 1.25rem;
+
 }
 
 body {
   background: var(--main-bg-color);
-  font-family: sans-serif;
+  font-family: var(--serif);
     /* padding: var(--ok-s-3); */
     /* max-width: 80ch; */
     /* margin: auto; */
     max-width: 100%;
+    color: var(--dark-text);
+    font-size: var(--body-bigger);
+}
+
+p {
+  font-size: var(--body-bigger);
+  font-weight: 500;
 }
 
 h1 {
   color: var(--accent);
+  font-family: var(--header-font); */
 }
 
 .container {
   padding: var(--ok-s-3);
-  max-width: 80ch;
+  max-width: 42rem;
   margin: auto;
 }
 
+ul {
+  font-size: 2rem;
+  list-style: none;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-color);
+}
 
 main {
   display: flex;
@@ -37,26 +64,26 @@ section, footer {
 
 section {
   flex: 1;
-  background: var(--main-bg-color);
+  /* background: var(--main-bg-color); */
 }
 
 .container {
-  max-width: 54rem;
+  max-width: 42rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: var(--main-bg-color);
+  /* background: var(--main-bg-color); */
 }
 
 footer {
-  max-width: 60rem;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 main {

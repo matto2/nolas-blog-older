@@ -2,7 +2,9 @@
 title: Life
 ---
 
-**By Nola O’Leary (written at age 7)**
+<!-- **By Nola O’Leary (written at age 7)** -->
+
+Posted March 5, 2022
 
 Life begins small. Even for the elephants. Then it grows. Beneath the sun. And the moon. Life grows. Ask any animal on earth, what do you love about life? The hawk will say sky. The camel will say sand. The snake will say grasssss. 
 
