@@ -174,3 +174,10 @@ a .blog-name {
   }
 
 }
+
+.logo {
+  grid-area: logo;
+  margin-bottom: 0;
+  margin-left: -1rem;
+  margin-top: 1rem;
+}
