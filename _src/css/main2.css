@@ -1,17 +1,18 @@
 :root {
-  --main-bg-color: #d8ecfdc2;
+  --main-bg-color: #fde618;
   --accent: #055bfc;
-  --header-font: 'Crete Round', cursive;
+  --header-font: 'Vollkorn', cursive;
   --light-text: #d4e0ff;
   --dark-text: #444;
-  --link-color: #055bfc;
-  --serif: 'EB Garamond', serif;
+  --link-color: #fc059d;
+  --serif: 'Vollkorn', serif;
   --body-bigger: 1.25rem;
-
 }
 
-body {
-  background: var(--main-bg-color);
+.body {
+  background: rgb(21,4,242);
+  background: linear-gradient(180deg, rgba(21,4,242,1) 0%, rgba(255,0,161,1) 35%, rgba(251,242,142,1) 81%);
+
   font-family: var(--serif);
     /* padding: var(--ok-s-3); */
     /* max-width: 80ch; */
@@ -19,7 +20,14 @@ body {
     max-width: 100%;
     color: var(--dark-text);
     font-size: var(--body-bigger);
+    
 }
+
+html, 
+body {
+    height: 100%;
+}
+
 
 p {
   font-size: var(--body-bigger);
@@ -28,7 +36,14 @@ p {
 
 h1 {
   color: var(--accent);
-  font-family: var(--header-font); */
+  font-family: var(--header-font);
+  font-weight: 600;
+}
+
+
+h1.brand a {
+  margin-top: 0;
+  text-decoration: none;
 }
 
 .container {
@@ -36,6 +51,17 @@ h1 {
   max-width: 42rem;
   margin: auto;
 }
+
+.nola-header {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: 10rem;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
 
 ul {
   font-size: 2rem;
@@ -89,3 +115,43 @@ footer {
 main {
   margin-bottom: 1rem;
 }
+
+.nola-header2 {  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-rows: 12rem;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo blog-name";
+  align-items: center;
+  text-decoration: none;
+}
+
+.nola-header2 a { 
+  text-decoration: none;
+}
+
+.logo { 
+  grid-area: logo;
+  margin-bottom: 0;
+}
+
+.blog-name { 
+  grid-area: blog-name;
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+a .blog-name { 
+  text-decoration: none; 
+}
+
+/* .container {
+  max-width: 42rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite;
+  /* background: var(--main-bg-color); */
+  border-radius: 7rem;
+} */
