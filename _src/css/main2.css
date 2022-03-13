@@ -125,6 +125,7 @@ main {
     "logo blog-name";
   align-items: center;
   text-decoration: none;
+  max-width: 100%;
 }
 
 .nola-header2 a { 
@@ -139,7 +140,7 @@ main {
 .blog-name { 
   grid-area: blog-name;
   margin-top: 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 a .blog-name { 
@@ -155,3 +156,21 @@ a .blog-name {
   /* background: var(--main-bg-color); */
   border-radius: 7rem;
 } */
+
+
+
+@media screen and (max-width: 800px) {
+
+  .nola-header2 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12rem 12rem;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo blog-name";
+    align-items: center;
+    text-decoration: none;
+    max-width: 100%;
+  }
+
+}
